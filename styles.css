@@ -1,11 +1,16 @@
-body{
+body {
+ 
     font-family: cursive, Arial, Helvetica, sans-serif;
-}
+    margin: 0;
+  }
 
 header img{
     height: 50px;
     width: 50px;
     border-radius: 50%;
+}
+p{
+    color: #999;
 }
 
 .dropdown{
@@ -30,4 +35,15 @@ height: 15px;
     border-radius: 25px;
     width: 15px;
 
+}
+
+.anime img{
+    width: 300px;
+    height:180px;
+}
+
+
+.who img{
+    height: 163px;
+    width: 163px;
 }
