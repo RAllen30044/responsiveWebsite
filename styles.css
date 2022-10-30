@@ -130,23 +130,42 @@ p {
 h4 {
   margin-top: 5px;
 }
+
 .socialPersonal{
+    color: #999;
+    margin: 17px;
+    display: flex;
     
-        color: #999;
-        margin: 17px
-    
-     
+    justify-content: center;
+    gap: 20px;
 }
-.socialPersonal a{
-    margin: 0  5px;
-    color: #282828;
+.socialContainer{
+    display: flex;
+}
+
+
+
+.personalIcons{
+    margin: 0  10px;
    
-    border: 1px  solid #282828;
-    height: 15px;
-    width: 15px;
-    padding: 1px 7px;
+    background-color: #999;
+    border: 1px  solid #999;
+ height: 30px;
+ width: 30px;
+    display: flex;
     border-radius: 50%;
+    align-items: center;
+    justify-content: center;
 }
+.personalIcons a{
+color: #282828;
+
+}
+
+
+
+
+
 
 footer {
   background-color: #282828;
