@@ -1,138 +1,218 @@
 body {
- 
-    font-family: cursive, Arial, Helvetica, sans-serif;
-    margin: 0;
-    text-align: center;
-  }
-.header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-   
+  font-family: cursive, Arial, Helvetica, sans-serif;
+  margin: 0;
+  text-align: center;
+  width: 100%;
 }
-.left{
-display: flex;
-align-items: center;   
-
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px;
 }
-
-
-
-a{
-    text-decoration: none;
+.left {
+  display: flex;
+  align-items: center;
 }
-
-
-  
-header img{
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
+.left a {
+  margin-right: 2px;
 }
-p{
-    color: #999;
+.right a {
+  margin-left: 20px;
 }
 
-.dropdown{
-    
-        width: 15px;
-        display: flex;
-height: 15px;
-        border: 4px solid #00bfb6;
-        padding: 8px 10px;
-     
-       border-radius: 50%;
-       flex-direction: column;
-       align-items: center;
-       justify-content: center;
-     display: none;
-
+a {
+  text-decoration: none;
 }
 
-.dropdown div{
-    height: 5px;
-    background:orange;
-    margin: 2px 0px 2px 0px;
-    border-radius: 25px;
-    width: 15px;
-
+header img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+header a {
+  color: #000;
+}
+p {
+  color: #999;
 }
 
-.anime{
-    display: flex;
-}
-.anime img{
-    width: 200px;
-    height:180px;
-}
+.dropdown {
+  width: 10px;
+  display: flex;
+  height: 10px;
 
-
-
-
-.intro{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    
+  padding: 8px 10px;
+  background-color: rgba(153, 153, 153, 0.05);
+  border-radius: 50%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: none;
 }
 
-.theBigThree{
-    display: flex;
-
+.dropdown div {
+  height: 1px;
+  background: #000;
+  margin: 2px 0px 2px 0px;
+  border-radius: 25px;
+  width: 100%;
+}
+.big3:hover,
+.right a:hover {
+  color: #f7af2a;
 }
 
-.theSuccessors{
-    display: flex;
-    flex-direction: column;
-}
-.who{
-    display: flex;
-    justify-content: center;
+.intro p {
+  margin: 0 10px;
+  padding: 0 10px;
 }
 
-.who img{
-    height: 163px;
-    width: 163px;
-    margin: 0 30px;
+.anime img {
+  width: 100%;
+  height: 240px;
 }
-h4{
-    margin-top: 5px;
+
+.anime {
+  margin: 0 10px;
+}
+
+.content {
+  text-align: left;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 54px;
+}
+
+.theBigThree {
+  display: flex;
+  margin: 30px;
+}
+.theBigThree h4 {
+  margin: 0;
+}
+
+.theBigThree p {
+  margin: 0;
+}
+
+.successors {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+.successors p {
+  margin: 0 10px;
+  padding: 0 10px;
+}
+.who {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.who img {
+  height: 163px;
+  width: 163px;
+  margin: 0 30px;
+}
+h4 {
+  margin-top: 5px;
+}
+
+footer {
+  background-color: #282828;
+  color: white;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+footer a {
+  color: #999;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+}
+
+hr {
+  width: 99%;
+}
+.copyright p {
+  margin-bottom: 0px;
 }
 
 
 @media all and (max-width: 768px) {
-    .right{
-        display: none;
-    }
-    .dropdown{
-        display: block;
-    }
+  .right {
+    display: none;
+  }
+  .dropdown {
+    display: block;
+  }
 
-    .intro{
-        flex: 100%;
-    }
+  .intro {
+    flex: 100%;
+  }
 
-    .theBigThree{
-        flex-wrap: wrap;
-        
-        
-    }
-.anime img{
+  .theBigThree {
+    flex-wrap: wrap;
+  }
+  .anime {
+    display: flex;
+    margin-top: 30px;
+  }
+
+  .anime img {
     align-self: center;
-}
+    width: 200px;
+  }
 
-.content{
-    max-width: 560px;
+  .content {
+    max-width: 500px;
     text-align: left;
-}
-
-.whoContainer{
+  }
+  .content h4 {
+    text-align: left;
+  }
+  .whoContainer {
     display: grid;
     justify-content: center;
-}
-.who{
+  }
+  .who {
     flex-wrap: wrap;
     max-width: 500px;
+  }
 }
-
+@media all and (max-width: 600px) {
+  .anime {
+    flex-direction: column;
+    text-align: center;
+    margin: 0 10px;
+  }
+  .anime img {
+    width: 100%;
+    height: 215px;
+  }
+  .content {
+    text-align: justify;
+    margin: 0 5px;
+  }
+  h4 {
+    text-align: center;
+  }
+  .who img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+  .info {
+    display: block;
+  }
 }
