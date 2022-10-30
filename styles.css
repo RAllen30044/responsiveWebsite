@@ -63,24 +63,6 @@ p {
   color: #f7af2a;
 }
 
-.intro p {
-  margin: 0 10px;
-  padding: 0 10px;
-}
-
-.anime img {
-  width: 100%;
-  height: 240px;
-}
-
-.anime {
-  margin: 0 10px;
-}
-
-.content {
-  text-align: left;
-}
-
 .intro {
   display: flex;
   flex-direction: column;
@@ -88,9 +70,34 @@ p {
   margin-bottom: 54px;
 }
 
+.intro p {
+  margin: 0 10px;
+  padding: 0 10px;
+}
+
+
+.anime {
+  margin: 0 10px;
+}
+.anime img {
+  width: 100%;
+  height: 240px;
+}
+
+
+
+.content {
+  text-align: left;
+  margin-top: 10px
+}
+.content p{
+    margin-top: 10px;
+}
+
 .theBigThree {
   display: flex;
   margin: 30px;
+  gap: 20px;
 }
 .theBigThree h4 {
   margin: 0;
@@ -123,6 +130,23 @@ p {
 h4 {
   margin-top: 5px;
 }
+.socialPersonal{
+    
+        color: #999;
+        margin: 17px
+    
+     
+}
+.socialPersonal a{
+    margin: 0  5px;
+    color: #282828;
+   
+    border: 1px  solid #282828;
+    height: 15px;
+    width: 15px;
+    padding: 1px 7px;
+    border-radius: 50%;
+}
 
 footer {
   background-color: #282828;
@@ -132,8 +156,40 @@ footer {
   flex-direction: column;
 }
 
-footer a {
-  color: #999;
+
+
+.social{
+    color: #999;
+    margin: 17px;
+    display: flex;
+    
+    justify-content: center;
+    gap: 20px;
+}
+.socialContainer{
+    display: flex;
+}
+
+.item{
+    display: flex;
+    flex-direction: row;
+}
+
+.icon{
+    margin: 0  10px;
+   
+    background-color: #999;
+    border: 1px  solid #999;
+ height: 30px;
+ width: 30px;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+.icon a{
+color: #282828;
+
 }
 
 .info {
@@ -149,6 +205,8 @@ hr {
 }
 
 
+
+
 @media all and (max-width: 768px) {
   .right {
     display: none;
@@ -162,7 +220,7 @@ hr {
   }
 
   .theBigThree {
-    flex-wrap: wrap;
+    flex-direction: column;
   }
   .anime {
     display: flex;
@@ -191,6 +249,9 @@ hr {
   }
 }
 @media all and (max-width: 600px) {
+    .intro p{
+        text-align: justify;
+    }
   .anime {
     flex-direction: column;
     text-align: center;
@@ -212,7 +273,20 @@ hr {
     height: auto;
     margin: 0;
   }
+  .successors p{
+    text-align: justify;
+  }
+  .social{
+    flex-direction: column;
+ align-items: center;
+  }
+  .socialContainer{
+    flex-direction: column;
+    gap: 20px;
+  }
+  
   .info {
     display: block;
   }
+
 }
