@@ -75,23 +75,21 @@ p {
   padding: 0 10px;
 }
 
-
 .anime {
   margin: 0 10px;
 }
 .anime img {
   width: 100%;
   height: 240px;
+  margin-bottom: 20px;
 }
-
-
 
 .content {
   text-align: left;
-  margin-top: 10px
+  margin-left: 20px;
 }
-.content p{
-    margin-top: 10px;
+.content p {
+  margin-top: 10px;
 }
 
 .theBigThree {
@@ -100,10 +98,6 @@ p {
   gap: 20px;
 }
 .theBigThree h4 {
-  margin: 0;
-}
-
-.theBigThree p {
   margin: 0;
 }
 
@@ -116,56 +110,48 @@ p {
   margin: 0 10px;
   padding: 0 10px;
 }
+
 .who {
   display: flex;
   justify-content: center;
   margin-top: 30px;
+  gap: 30px;
 }
 
 .who img {
   height: 163px;
   width: 163px;
-  margin: 0 30px;
 }
 h4 {
   margin-top: 5px;
 }
 
-.socialPersonal{
-    color: #999;
-    margin: 17px;
-    display: flex;
-    
-    justify-content: center;
-    gap: 20px;
+.socialPersonal {
+  color: #999;
+  margin: 17px;
+  display: flex;
+
+  justify-content: center;
+  gap: 10px;
 }
-.socialContainer{
-    display: flex;
-}
-
-
-
-.personalIcons{
-    margin: 0  10px;
-   
-    background-color: #999;
-    border: 1px  solid #999;
- height: 30px;
- width: 30px;
-    display: flex;
-    border-radius: 50%;
-    align-items: center;
-    justify-content: center;
-}
-.personalIcons a{
-color: #282828;
-
+.socialPersonalContainer {
+  display: flex;
 }
 
+.personalIcons {
+  margin: 0 10px;
 
-
-
-
+  border: 1px solid #282828;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+.personalIcons a {
+  color: #282828;
+}
 
 footer {
   background-color: #282828;
@@ -175,40 +161,37 @@ footer {
   flex-direction: column;
 }
 
+.social {
+  color: #999;
+  margin: 17px;
+  display: flex;
 
-
-.social{
-    color: #999;
-    margin: 17px;
-    display: flex;
-    
-    justify-content: center;
-    gap: 20px;
+  justify-content: center;
+  gap: 20px;
 }
-.socialContainer{
-    display: flex;
+.socialContainer {
+  display: flex;
 }
 
-.item{
-    display: flex;
-    flex-direction: row;
+.item {
+  display: flex;
+  flex-direction: row;
 }
 
-.icon{
-    margin: 0  10px;
-   
-    background-color: #999;
-    border: 1px  solid #999;
- height: 30px;
- width: 30px;
-    display: flex;
-    border-radius: 50%;
-    align-items: center;
-    justify-content: center;
-}
-.icon a{
-color: #282828;
+.icon {
+  margin: 0 10px;
 
+  background-color: #999;
+  border: 1px solid #999;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+.icon a {
+  color: #282828;
 }
 
 .info {
@@ -222,9 +205,6 @@ hr {
 .copyright p {
   margin-bottom: 0px;
 }
-
-
-
 
 @media all and (max-width: 768px) {
   .right {
@@ -243,7 +223,7 @@ hr {
   }
   .anime {
     display: flex;
-    margin-top: 30px;
+    margin-top: ;
   }
 
   .anime img {
@@ -268,9 +248,9 @@ hr {
   }
 }
 @media all and (max-width: 600px) {
-    .intro p{
-        text-align: justify;
-    }
+  .intro p {
+    text-align: justify;
+  }
   .anime {
     flex-direction: column;
     text-align: center;
@@ -282,8 +262,12 @@ hr {
   }
   .content {
     text-align: justify;
-    margin: 0 5px;
+    margin: 20px 5px;
   }
+  .content p {
+    margin-top: 10px;
+  }
+
   h4 {
     text-align: center;
   }
@@ -292,20 +276,20 @@ hr {
     height: auto;
     margin: 0;
   }
-  .successors p{
+  .successors p {
     text-align: justify;
   }
-  .social{
+  .social {
     flex-direction: column;
- align-items: center;
+    align-items: center;
   }
-  .socialContainer{
+  .socialContainer {
     flex-direction: column;
     gap: 20px;
   }
-  
-  .info {
-    display: block;
-  }
 
+  .info {
+    display: flex;
+    flex-direction: column;
+  }
 }
